@@ -1,0 +1,355 @@
+@font-face {
+    font-family:'Baron Neue';
+    src:url('fonts/Baron_Neue.woff'),
+         url('fonts/Baron_Neue.ttf');
+}
+@font-face {
+    font-family:Swis721;
+    src:url('fonts/Swis721_Cn_BT.woff'),
+         url('fonts/Swis721_Cn_BT.ttf');
+}
+/* reset css */
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+html, body { margin:0; padding:0; font:16px/1.4em Swis721, Verdana, sans-serif; color:#5e5e5e; overflow-x:hidden; }
+p, h1, h2, h3 { margin-top:0; }
+h2 { font-family:'Baron Neue', Verdana, sans-serif; text-transform:lowercase; }
+p { margin-bottom:20px; }
+a{text-decoration:none;outline:none;color:#5e5e5e}
+a:hover{text-decoration:underline}
+a img{border:none;vertical-align:middle}
+div, main, section, article, header, footer { position:relative; display:block; }
+input, select, option, optgroup, textarea { outline:none; border:none; font-family:Swis721, Verdana, sans-serif; color:#000; }
+img, embed, object, video, fieldset { max-width:100%; border:none; vertical-align:top; }
+figure, fieldset, textarea { margin:0; padding:0; display:block; }
+[type="submit"], [type="file"] { cursor:pointer; }
+address { font-style:normal; }
+input:focus::-webkit-input-placeholder { opacity:0 !important; }
+input:focus:-moz-placeholder { opacity:0 !important; }
+input:focus:-ms-input-placeholder { opacity:0 !important; }
+input:focus::-moz-placeholder { opacity:0 !important; }
+::-webkit-input-placeholder { color:#000; opacity:1 !important; }
+:-moz-placeholder { color:#000; opacity:1 !important; }
+::-moz-placeholder { color:#000; opacity:1 !important; }
+:-ms-input-placeholder { color:#000; opacity:1 !important; }
+section h2,.titulo { font:24px/1.4em 'Baron Neue', Verdana, sans-serif; text-transform:lowercase; position:relative; }
+section h2:after { content:''; width:45%; height:2px; position:absolute; bottom:0; left:50%; transform:translate(-50%,-50%); background-color:#1d1586; }
+
+/* geral */
+main { z-index:1; }
+form .retorno { margin:4px 0 0 120px; width:100%; width:calc(100% - 120px); font-weight:bold; font-size:18px; padding:8px 12px; background-color:#fbe1e0; color:#ff0600; border: solid 1px #ff0600; vertical-align:top; display:none; }
+form.formulario .campo .retorno, form .retorno:empty, form .retorno:empty + br { display:none; }
+form .campo .retorno { margin:6px 0 0; text-align:left; clear:both; }
+
+.centraliza { text-align:center; }
+.central { max-width:1140px; margin:0 auto; padding:0 10px; }
+.clear { clear:both; }
+.video-proporcional { padding-top:56.25%; }
+.video-proporcional iframe { position:absolute; width:100%; height:100%; top:0; left:0; border:none; }
+.divisoria { position:relative; }
+.divisoria .barra { height:36px; width:100%; position:absolute; top:-18px; left:0; background:url('../img/lego.png') repeat-x 0 0; z-index:100; }
+.interna.divisoria .barra { top:18px; }
+.interna .header { background-image:url('../img/fundo-muro-azul.jpg'); color:#ffffff; padding:40px 0 10px; }
+.botao { background-color:#ffffff; color:#ffffff; border-radius:20px; padding:10px 20px; display:block; margin:20px auto 0; text-align:center; }
+a.botao:hover { text-decoration:none; }
+
+/* topo */
+#nav-desktop { display:none; }
+#nav-desktop a { font:12px/1.2em 'Baron Neue', Verdana; text-decoration:none; text-transform:lowercase; text-align:center; }
+header { padding:15px 0; position:fixed; top:0; background-color:#ffffff; z-index:2; width:100%; transition:all 0.5s ease; }
+header.fixo { z-index:1000; }
+#logo { float:left; max-width:60%; }
+#logo img { width:auto; transition:all 0.4s ease; }
+#link-area-professor { display:none; padding:4px 8px; margin-bottom:12px; border-radius:9px; font:12px/1.2em 'Baron Neue', Verdana; background-color:#bbbbbb; color:#ffffff; text-transform:lowercase; text-decoration:none; }
+header.fixo { border-bottom:solid 1px #01549C; }
+header.fixo #link-area-professor { display:none; }
+header.fixo #logo { height:50px; }
+header.fixo #logo img { height:50px; }
+header.fixo #nav-desktop a { padding-top:0; background:none; }
+header + main { margin-top:131px; }
+header.fixo + main { margin-top:81px; }
+#nav-mobile { display:none; position:fixed; top:0; left:0; z-index:99991; background-color:rgba(0,103,166,0.94); width:100%; height:100%; overflow:auto; padding:32px 20px; }
+#nav-mobile a { display:block; color:#ffffff; text-align:center; font:18px/1.5em 'Baron Neue', Verdana, sans-serif; }
+#nav-mobile a + a { margin-top:10px; }
+#botao-menu-mobile { display:block; float:right; height:48px; width:48px; cursor:pointer; background:url('../img/menu-mobile.png') no-repeat center center #0067a6e6; }
+#fechar-nav { display:block; position:absolute; right:5px; top:5px; height:32px; width:32px; cursor:pointer; background:url('../img/close.png') no-repeat center center; }
+
+/* index */
+#banners { position:relative; text-align:center; overflow:hidden; z-index:1; height:480px; }
+#banners .banner { display:block; height:100%; width:100%; background:no-repeat center center / 100% auto; }
+#banners .banner > a { width:100%; height:100%; display:block; }
+#banners .cycle-nav { position:absolute; width:100%; top:50%;  margin-top:-20px; z-index:999; display:block; }
+#banners .cycle-nav .central { padding:0; }
+#banners figcaption { position:absolute; bottom:50%; right:5%; padding:20px 2%; max-width:90%; background-color:rgba(0,103,166,0.94); color:#fff; transform:translateY(50%); }
+#banners .titulo { display:block; margin-bottom:0.5em; position:relative; padding-bottom:0.5em; line-height:1.1em; }
+#banners .titulo:after { content:''; width:50%; height:2px; position:absolute; bottom:-2.5px; left:50%; transform:translateX(-50%); background-color:#fff; }
+#banners .texto { display:block; }
+#video-banner { position:relative; width:100%; height:0; padding:0; }
+#video-banner iframe { position:absolute; top:0; left:0; height:100%; width:100%; }
+
+#imagem-entrada img { display:block; margin:0 auto; }
+
+#chamada { padding:40px 0 20px; }
+#chamada .bloco .header { margin:10px 0; }
+#chamada .bloco .header h2 { -webkit-flex:1; flex:1; -webkit-order:1; order:1; padding:0 20px 20px; margin-bottom:0; color:#1d1586; text-align:center; position:relative; }
+#chamada .bloco .header h2:after { height:4px; width:40%; }
+#chamada .bloco .logo { -webkit-flex:none; flex:none; -webkit-order:2; order:2; margin-left:20px; }
+#chamada .ancora { display:block; width:53px; height:53px; margin:20px auto 0; background:url('../img/seta.png') no-repeat center center #221A88; cursor:pointer; border-radius:50%; }
+
+.lista .curso + .curso { margin-top:20px; }
+#roboticas .robotica { color:#fff; position:relative; padding:40px 0; text-align:center; }
+#roboticas .robotica h2 { font-size:24px; line-height:1em; padding-bottom:20px; margin:0 auto 20px; position:relative; width:80%; text-align:center; }
+#roboticas .robotica:before { content:''; width:50%; height:100%; display:block; position:absolute; top:0; right:100%; }
+#roboticas .robotica:after { content:''; width:50%; height:100%; display:block; position:absolute; top:0; left:100%; }
+#roboticas .robotica a { width:200px; }
+#roboticas .robotica h2:after { background-color:#fff; height:2px; width:50%; }
+#roboticas .robotica:first-child { background:url('../img/fundo-muro-azul.jpg'); }
+#roboticas .robotica:first-child a { color:#0067a6; }
+#roboticas .robotica:first-child:before { background:url('../img/fundo-muro-azul.jpg'); }
+#roboticas .robotica:first-child:after { background:url('../img/fundo-muro-azul.jpg'); }
+#roboticas .robotica:last-child { background:url('../img/fundo-muro-laranja.jpg'); }
+#roboticas .robotica:last-child a { color:#C87400; }
+#roboticas .robotica:last-child:before { background:url('../img/fundo-muro-laranja.jpg'); }
+#roboticas .robotica:last-child:after { background:url('../img/fundo-muro-laranja.jpg'); }
+
+#solucoes-curriculares { padding:20px 0; }
+#solucoes-curriculares h2 { color:#1d1586; text-align:center; padding-bottom:20px; }
+#solucoes-curriculares .curso .ensino { text-align:center; font-size:18px; }
+#solucoes-curriculares .curso .idade { text-align:center; color:#284f9e; font-size:24px; text-transform:uppercase; }
+#solucoes-curriculares .curso .logo { margin:10px 0; }
+#solucoes-curriculares .curso figure { text-align:center; }
+#solucoes-curriculares .curso .breve { margin-top:10px; }
+#solucoes-extracurriculares { padding:0 0 40px 0; }
+#solucoes-extracurriculares h2 { color:#C87400; text-align:center; padding-bottom:20px; }
+#solucoes-extracurriculares h2:after { background-color:#C87400; }
+#solucoes-extracurriculares .curso { max-width:550px; margin:0 auto 20px; }
+#solucoes-extracurriculares .slogan { text-align:center; }
+#solucoes-extracurriculares .logo { text-align:center; margin-bottom:10px; }
+#solucoes-extracurriculares figure { display:block; margin-bottom:20px; }
+#cursos-ancoras .curso { max-width:550px; }
+.conheca-robotica { background-color:#1d1586; max-width:420px; margin:40px auto 0; }
+
+#noticias-entrada { padding:40px 0; background:url('../img/fundo-muro-verde.jpg'); color:#fff; }
+#noticias-entrada h2 { color:#fff; text-align:center; padding-bottom:20px; }
+#noticias-entrada h2:after { background-color:#fff; width:50%; }
+#noticias-entrada .noticia { cursor:pointer; }
+#noticias-entrada .noticia a { color:#fff; display:block; text-align:center; text-decoration:none; margin-bottom:20px; font-size:24px; }
+#noticias-entrada .mais-noticias { color:#01a54f; max-width:250px; margin:40px auto 0; }
+#noticias-entrada .noticia figure { margin:20px auto; }
+#noticias-entrada .noticia figure img { width:100%; display:block; }
+#noticias-entrada .noticia + .noticia { margin-top:40px; }
+
+#instagram { background:url('../img/bgInstagram.jpg') no-repeat center top #1d1586; color:#fff; padding:40px 20px; text-align:center; }
+#instagram p { position:relative; padding-bottom:30px; }
+#instagram p:after { content:''; width:15%; height:2px; position:absolute; bottom:0; left:50%; transform:translate(-50%,-50%); background-color:#FFFFFF; }
+#instagram a { color:#fff; }
+#galeria-instagram { margin-top:40px; display:block; }
+#galeria-instagram:empty { display:none; }
+#galeria-instagram { display:block; }
+#galeria-instagram .item-instagram { display:block; width:100%; height:auto; background:no-repeat center center / cover; }
+#galeria-instagram .item-instagram:before { padding-top:100%; content:''; display:block; }
+#galeria-instagram .item-instagram + .item-instagram { margin:20px 0 0 0; }
+
+#redes-sociais { background-image:url('../img/bgLego.png'); padding:60px 0 74px; overflow:hidden; }
+#redes-sociais h2 { color:#1d1586; position:relative; padding-bottom:20px; margin:0 0 37px; text-align:center; font-size:28px; line-height:1.4em; }
+
+#redes-sociais a { display:block; margin:0 0 20px; text-align:center; }
+#redes-sociais a + a { margin-left:2%; }
+#redes-sociais a:before { content:''; display:block; vertical-align:middle; height:120px; width:120px; background:no-repeat center center / 100% auto; margin:0 auto 10px; max-width:100%; }
+#redes-sociais a.instagram:before { background-image:url('../img/instagram.png'); }
+#redes-sociais a.facebook:before { background-image:url('../img/facebook.png'); }
+#redes-sociais a.whatsapp:before { background-image:url('../img/whatsapp.png'); }
+
+/* Internas */
+.interna { padding:40px 0; overflow:hidden; }
+.interna h1 { font:700 24px/1.2em Baron Neue,Verdana,sans-serif; color:#FFFFFF; text-transform:lowercase; position:relative; padding-bottom:30px; }
+.interna h1:after { content:''; width:30%; position:absolute; height:2px; bottom:-1px; left:50%; transform:translateX(-50%); background-color:#ffffff; }
+.interna .header { text-align:center; margin-bottom:20px; }
+.interna .header ~ .divisoria .barra { top:-18px; }
+.interna .header + .conteudo { padding-top:20px; }
+.interna .header .titulo { margin:40px 0 10px; font:18px/1.2em Swis721,Verdana,sans-serif; text-align:center; text-transform:none; }
+.interna .texto { overflow:hidden; }
+.interna .texto p img { margin-bottom:20px; }
+#horario-atendimento { background-color:#FFFFFF; color:#0067A6; padding:10px; border-radius:20px; margin-top:20px; }
+#horario-atendimento .titulo { background-color:#FFFFFF; color:#0067A6; font-size:24px; line-height:1.2em; margin:0 0 10px; }
+
+#solucoes-pedagogicas .interna { background:url('../img/fundo-muro-vermelho.jpg'); color:#fff; }
+#solucoes-pedagogicas .interna:before { content:''; background-color:#ffffff; position:absolute; top:0; left:0; width:100%; height:36px; }
+#solucoes-pedagogicas .interna .header { background:none; }
+#solucoes-pedagogicas .interna .header + .conteudo { padding:0 10px; }
+
+/* Curricular */
+#robotica-curricular .interna { background:url('../img/fundo-muro-azul.jpg'); color:#fff; }
+#robotica-curricular .interna:before { content:''; background-color:#ffffff; position:absolute; top:0; left:0; width:100%; height:36px; }
+#robotica-curricular .interna .header { background:none; }
+#robotica-curricular .interna .header + .conteudo { padding:0; }
+#seja-um-parceiro { padding:40px 0; background:url('../img/fundo-muro-azul.jpg'); color:#fff; }
+#seja-um-parceiro h2 { color:#ffffff; text-align:center; padding-bottom:20px; margin-bottom:20px; }
+#seja-um-parceiro h2:after { background-color:#ffffff; }
+
+#robotica-curricular #cursos-ancoras .ancora { background-color:#0067a6; }
+#cursos-lista .ensino { color:#284f9e; font-size:36px; line-height:1.2em; }
+#cursos-lista .idade { color:#284f9e; font-size:48px; line-height:1em; text-transform:uppercase; margin-bottom:5px; }
+#cursos-lista .robo { display:none; }
+
+#cursos-ancoras { display:none; background-color:#ffffff; padding:40px 20px; text-align:center; }
+#cursos-ancoras h2 { color:#0067a6; text-align:center; padding-bottom:40px; margin-bottom:40px; }
+#cursos-ancoras h2:after { background-color:#0067a6; }
+#cursos-ancoras .idade { color:#284f9e; font-size:24px; text-transform:uppercase; margin-bottom:5px; }
+#cursos-ancoras .ancora { display:block; width:53px; height:53px; margin:40px auto 0; background:url('../img/seta.png') no-repeat center center; cursor:pointer; border-radius:50%; }
+
+/* Extracurricular */
+#robotica-extracurricular .interna { background:url('../img/fundo-muro-laranja.jpg'); color:#fff; padding-bottom:0; }
+#robotica-extracurricular .interna:before { content:''; background-color:#ffffff; position:absolute; top:0; left:0; width:100%; height:36px; }
+#robotica-extracurricular .interna .header { background:none; }
+#robotica-extracurricular .interna .header + .conteudo { padding:0; }
+#robotica-extracurricular #cursos-ancoras h2 { color:#db7700; }
+#robotica-extracurricular #cursos-ancoras h2:after { background-color:#db7700; }
+#robotica-extracurricular #cursos-ancoras .ancora { background-color:#db7700; }
+
+#cursos-lista { background-color:#ffffff; }
+#cursos-lista .curso { color:#5e5e5e; padding:30px 20px; }
+#cursos-lista .curso + .curso { margin-top:20px; }
+#cursos-lista .slogan { font-size:24px; line-height:1.2em; text-align:center; }
+#cursos-lista .logo { text-align:center; }
+#cursos-lista figure { margin:20px auto; text-align:center; }
+#cursos-lista .botao { background-color:#ff0600; color:#ffffff; display:inline-block; }
+
+#pre-matricula { padding:40px 0; background:url('../img/fundo-muro-roxo.jpg'); color:#fff; }
+#pre-matricula h2 { color:#ffffff; text-align:center; padding-bottom:40px; margin-bottom:40px; }
+#pre-matricula h2:after { background-color:#ffffff; }
+#form-pre-matricula { margin-top:40px; }
+#form-pre-matricula h3 { font:24px/1.2em Baron Neue,Verdana,sans-serif; text-align:center; text-transform:lowercase; margin:20px 0; }
+#form-pre-matricula .subtitulo { font:18px/1.2em Baron Neue,Verdana,sans-serif; text-transform:lowercase; margin:20px 0; }
+#form-pre-matricula .input { background-color:rgba(255,255,255,0.19); color:#fff; }
+#form-pre-matricula .input.erro { color:#c00; }
+#form-pre-matricula .numero { flex:none; }
+#form-pre-matricula #numero { width:80px; flex:none; }
+#form-pre-matricula a { color:#fff; text-decoration:underline; }
+#form-pre-matricula label { width:120px; }
+#form-pre-matricula label.checkbox { margin:0 20px 0 0; line-height:25px; width:auto; cursor:pointer; -webkit-flex:none; flex:none; max-width:100%; }
+#form-pre-matricula label.checkbox input { width:25px; height:25px; background-color:rgba(255,255,255,0.3); display:inline-block; vertical-align:top; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
+#form-pre-matricula label.checkbox input:checked { background:url('../img/checked.png') no-repeat center center rgba(255,255,255,0.3); }
+#form-pre-matricula select { color:#fff; }
+#form-pre-matricula .retorno { background-color:#cc0000; color:#fff; margin-left:0; width:100%; }
+#form-pre-matricula input[type="submit"] { background-color:#fff; color:#A60094; width:auto; }
+
+/* Notícias */
+#noticias .interna { background:url('../img/fundo-muro-verde.jpg'); color:#fff; }
+#noticias .interna:before { content:''; background-color:#ffffff; position:absolute; top:0; left:0; width:100%; height:36px; }
+#noticias .interna .header { background:none; margin-bottom:0; }
+#noticias .interna h1 { margin-bottom:0; }
+#categorias-noticias { background:url('../img/fundo-muro-verde.jpg'); color:#fff; padding:0 0 40px; text-align:center; }
+#categorias-noticias a { color:#01A54F; display:inline-block; }
+#categorias-noticias a + a { margin-left:20px; }
+#lista-noticias { padding:0 0 40px; overflow:hidden; }
+#lista-noticias .central { overflow:hidden; }
+#lista-noticias .item-noticia { width:100%; max-width:550px; margin:0 auto 40px; cursor:pointer; }
+#lista-noticias .item-noticia .titulo { font-size:24px; text-align:center; }
+#lista-noticias .item-noticia figure { margin:30px 0 20px; }
+#lista-noticias .item-noticia .texto { line-height:26px; font-size:18px; }
+#lista-noticias .item-noticia a { color:#fff; }
+#lista-noticias .item-noticia .leia-mais { text-decoration:underline; margin-top:10px; display:inline-block; }
+#noticia { color:#fff; }
+#noticia .titulo { font-size:24px; text-align:center; margin-bottom:30px; }
+#noticia .texto { font-size:18px; line-height:26px; }
+
+/* Blocos */
+.interna .botao.solucoes-pedagogicas { color:#A60016; width:290px; margin:40px auto 0; }
+.blocos .bloco + .bloco { margin-top:20px; }
+.blocos .bloco .titulo { text-align:center; margin-bottom:20px; font-size:24px; }
+.blocos .bloco .descricao { text-align:center; }
+.blocos .bloco figure { border:none; width:100%; height:0; padding-bottom:56.25vw; position:relative; margin:0 auto 20px; text-align:center; }
+.blocos .bloco figure.imagem { height:auto; padding-bottom:0; }
+.blocos .bloco iframe { border:none; width:100%; height:100%; position:absolute; top:50%; left:0; transform:translateY(-50%); }
+.blocos .bloco:last-child { margin-bottom:40px; }
+
+/* Parceiros */
+#parceiros-robomind .interna { padding-bottom:0; }
+#bloco-parceiros { margin:40px auto; }
+#lista-parceiros { width:100%; margin-top:20px; overflow:auto; text-align:center; }
+#lista-parceiros:empty:before { content:'clique no mapa acima para ver as unidades robomind correspondentes.'; font:24px/1.2em Baron Neue,Verdana,sans-serif; color:#0085c3 ; text-align:center; }
+#lista-parceiros .titulo { color:#0085c3; font:700 36px/1.2em Baron Neue,Verdana,sans-serif; padding-right:40px; white-space:nowrap; }
+#lista-parceiros .item-parceiro { display:block; color:#081535; font:18px/1.3em Swis721,Verdana,sans-serif; }
+#lista-parceiros .item-parceiro + .item-parceiro { margin-top:10px; padding-top:10px; border-top:solid 1px #ccc; }
+#lista-parceiros .cidade { display:block; color:#0085c3; font:24px/1.2em Baron Neue,Verdana,sans-serif; margin:10px 0; text-transform:lowercase; }
+#lista-parceiros > p { display:block; margin:10px 0; }
+#lista-parceiros > strong { display:block; color:#0085c3; font:24px/1.2em Baron Neue,Verdana,sans-serif; }
+#lista-parceiros .botao { background-color:#0067a6; width:180px; color:#ffffff; }
+#lista-parceiros a { color:#081535; }
+#mapa-parceiros { width:95%; max-width:100%; height:300px; vertical-align:middle; }
+
+#form-parceiros { margin-top:40px; }
+#form-parceiros .input { background-color:rgba(255,255,255,0.19); color:#fff; }
+#form-parceiros .input.erro { color:#c00; }
+#form-parceiros select { color:#fff; }
+#form-parceiros .retorno { background-color:#fffc; color:#cc0000; }
+#form-parceiros input[type="submit"] { background-color:#fff; color:#0067a6; width:auto; }
+.sucesso { text-align:center; font-weight:bold; font:700 24px/1.2em Baron Neue,Verdana,sans-serif; }
+
+/* 404 */
+.erro-404 { padding:100px 0; text-align:center; }
+.erro-404 h1 { margin:0 0 20px; font-weight:800; font-size:28px; font-style:italic; }
+.erro-404 p { margin-bottom:0; line-height:38px; font-size:32px; }
+.interna.erro-404 .header { background-image:url('../img/fundo-muro-vermelho.jpg'); }
+
+/* Contato */
+#fale-conosco .interna h2 { color:#ff0600; font:700 24px/1.2em Baron Neue,Verdana,sans-serif; margin:0 0 20px; text-align:center; padding-bottom:20px; }
+#fale-conosco .interna h2:after { background-color:#ff0600; }
+#form-contato label { color:#ff0600; }
+.erro { font:700 18px/1.2em Baron Neue,Verdana,sans-serif; color:#c00; }
+.erro:focus { background-color:#f9e2e2 !important; color:#333; border:solid 1px #c00; }
+.msgErro { word-spacing:0; display:block; margin:5px 0 10px; color:#c00; padding:5px; background-color:#fffc; margin-left:0; width:100%; text-align:center; }
+
+.input { height:32px; border:none; background-color:#cfe2ee; padding:5px; font-size:16px; font-family:Swis721; }
+select.input { padding:0; }
+.input:focus { background-color:#82c4ef; }
+
+.formulario > span { display:block; margin-bottom:10px; }
+.formulario .linha > span { display:-webkit-flex; display:flex; }
+.formulario .colunas > span { display:-webkit-flex; display:flex; }
+.formulario .linha > .wrap { -webkit-flex-wrap:wrap; flex-wrap:wrap; }
+.formulario .colunas > .wrap { -webkit-flex-wrap:wrap; flex-wrap:wrap; }
+.formulario > span > .colunas { display:block; }
+.formulario .colunas > span { -webkit-flex:1; flex:1; }
+.formulario .colunas .input { width:100%; -webkit-flex:1; flex:1; }
+.formulario .colunas .retorno { display:none; }
+.formulario .colunas input { -webkit-flex:none; flex:none; }
+.formulario .colunas span + span { margin-top:10px; }
+.formulario label { display:inline-block; line-height:32px; width:120px; flex:none; }
+.formulario label.checkbox { width:auto; -webkit-flex:1; flex:1; }
+.formulario label.checkbox input { width:auto; display:inline-block; }
+.formulario label.checkbox a { color:#ff0600; text-decoration:underline; }
+.formulario input { display:block; width:100%; margin:0; }
+.formulario select { display:block; width:100%; margin:0; }
+.formulario textarea.input { margin:0; height:auto; display:block; width:100%; }
+.formulario input[type="submit"] { width:200px; margin:30px auto 0; font-size:18px; background-color:#ff0600; color:#ffffff; }
+
+#mapa { width:512px; height: 242px; }
+.gm-style .gm-style-iw { white-space: nowrap; line-height: 1.25em }
+
+/* Paginação */
+.paginacao { width:auto; height:auto; margin:15px 0 10px 0; text-align:center; }
+.paginacao span,
+.paginacao a { display:inline-block; padding:0 10px; height:28px; line-height:28px; border-radius:50%; text-align:center; margin-left:4px; vertical-align:top; font-size:18px; }
+.paginacao span { background-color:rgba(0,0,0,0.3); color:#fff; }
+.paginacao a { background-color:#ffffff; color:#01A54F; text-decoration: none; }
+.paginacao a:hover { background-color:#c0c0c0; }
+
+/* rodape */
+footer { background:url('../img/bgLego.png') repeat left top #fbe5b3; padding:40px 0 10px; line-height:1.3em; }
+footer .colunas { text-align:center; }
+footer .colunas a { display:block; margin-bottom:5px; color:#5e5e5e; }
+footer .colunas .logo-rodape { margin-bottom:20px; }
+footer .colunas .header { display:block; color:#df3639; text-transform:lowercase; font:18px/1em Baron Neue,Verdana; margin-bottom:10px; }
+footer .colunas .coluna ~ .coluna { margin-top:20px; }
+footer .nav { display:none; }
+#copyright { display:block; margin-top:20px; font-size:14px; text-align:center; }
+
+@media screen and (min-width:480px){
+	#redes-sociais a { float:left; margin:0; width:32%; }
+}
+
+@media screen and (max-width:599px){
+	.interna .texto p img,
+	.interna .texto iframe { float:none !important; display:block; margin:0 auto 20px; }
+}

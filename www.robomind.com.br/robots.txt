@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /img/produtos/
+Sitemap: http://www.dominio.com.br/sitemapindex.xml

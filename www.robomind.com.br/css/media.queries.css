@@ -1,0 +1,202 @@
+@media screen and (min-width:600px){
+	#solucoes-curriculares .lista { display:block; text-align:center; }
+	#solucoes-curriculares .lista .curso { max-width:250px; display:inline-block; vertical-align:top; text-align:left; }
+	#solucoes-curriculares .lista .curso + .curso { margin:0 0 20px 40px; }
+	#solucoes-curriculares .lista .curso:nth-child(2n+1) { margin-left:0; }
+	form .colunas { display:-webkit-flex; display:flex; -webkit-justify-content:flex-end; justify-content:flex-end; }
+	form .colunas span { -webkit-flex:1; flex:1; }
+	form .colunas span + span { margin-top:0; margin-left:20px; }
+	.formulario > span > .colunas { display:-webkit-flex; display:flex; }
+	#form-pre-matricula label[for="numero"] { width:auto !important; margin-right:20px; }
+	#form-pre-matricula h3 { margin:40px 0; }
+
+	#lista-noticias .item-noticia { float:left; width:48%; }
+	#lista-noticias .item-noticia + .item-noticia { margin-left:4%; }
+	#lista-noticias .item-noticia:nth-child(2n+1) { margin-left:0; clear:both; }
+	.blocos .bloco figure { padding-bottom:310px; }
+
+	.formulario label.checkbox { margin-left:120px; -webkit-flex:1; flex:1; }
+
+	#form-pre-matricula .subtitulo { font:24px/1.2em Baron Neue,Verdana,sans-serif; margin:40px 0; }
+	.formulario .colunas { display:-webkit-flex; display:flex; -webkit-align-items:flex-start; align-items:flex-start; -webkit-justify-content:flex-end; justify-content:flex-end; }
+	.formulario .colunas span + span { margin-top:0; }
+	footer .colunas { display:-webkit-flex; display:flex; -webkit-justify-content:center; justify-content:center; -webkit-align-items:flex-start; align-items:flex-start; }
+	footer .colunas .coluna ~ .coluna { margin:0 0 0 20px; }
+	footer .colunas .coluna:first-child { display:-webkit-flex; display:flex; -webkit-align-items:center; align-items:center; }
+	footer .colunas .logo-rodape { margin-right:20px; }
+}
+
+@media screen and (min-width:800px){
+	#logo img { height:101px; }
+
+	#topo .logo { padding-right:0; text-align:center; }
+	#topo .logo a { max-width:none; margin-bottom:40px; display:inline-block; }
+
+	#topo .menu { position:absolute; width:100%; left:0; bottom:-25px; text-align:center; z-index:2; }
+	#topo .menu .menu-item { width:202px; height:48px; margin:0 -5px; background:url('../img/fundo-menu-item.png') no-repeat center; text-transform:uppercase; line-height:42px; font-weight:bold; font-size:14px; color:#FFF; vertical-align:top; display:inline-block; }
+
+	#topo .menu.menu-fixo { position:fixed; width:100%; top:0; bottom:auto; left:0; padding-top:15px; background:#fff; }
+	#topo .menu.menu-fixo .menu-item { margin-bottom:-25px; }
+
+	/* index */
+	section h2,.titulo { font-size:36px; line-height:1em; }
+	#banners figcaption { bottom:10%; right:20%; max-width:40%; padding:2%; transform:none; }
+	#banners .titulo { margin-bottom:1em; padding-bottom:1em; }
+	#banners .titulo:after { width:30%; height:5px; }
+
+	#chamada { padding:60px 0; }
+	#chamada > .central { display:-webkit-flex; display:flex; }
+	#chamada > .central > figure { margin-right:40px; -webkit-flex:none; flex:none; }
+	#chamada .bloco .header { margin:0 0 30px; display:-webkit-flex; display:flex; -webkit-align-items:center; align-items:center; }
+	#chamada .bloco .header h2 { font:36px/1em 'Baron Neue', Verdana; padding:0 20px 40px; }
+	#chamada .ancora { margin:40px auto 0; }
+
+	#noticias-entrada .lista { display:-webkit-flex; display:flex; }
+	#noticias-entrada .noticia { -webkit-flex:1; flex:1; }
+	#noticias-entrada .noticia + .noticia { margin:0 0 0 40px; }
+
+	#solucoes-curriculares .lista { display:-webkit-flex; display:flex; -webkit-flex-wrap:wrap; flex-wrap:wrap; -webkit-align-items:flex-start; align-items:flex-start; -webkit-justify-content:center; justify-content:center; }
+	#solucoes-curriculares .lista .curso { max-width:250px; -webkit-flex:1; flex:1; display:inline-block; vertical-align:top; text-align:left; }
+	#solucoes-curriculares .lista .curso + .curso { margin:0 0 20px 20px; }
+	#solucoes-curriculares .lista .curso:nth-child(2n+1) { margin-left:20px; }
+	#solucoes-curriculares .lista .curso:nth-child(4n+1) { margin-left:0; }
+	#solucoes-extracurriculares .lista { display:-webkit-flex; display:flex; -webkit-justify-content:space-between; justify-content:space-between; }
+	#solucoes-extracurriculares .curso { margin:0; }
+	#solucoes-extracurriculares .curso + .curso { margin-left:20px; }
+
+	#opcionais .opcional { margin-bottom:0; }
+	.msgErro { display:none; }
+	form .retorno { display:inline-block; }
+	form .colunas span .input:last-child { margin-bottom:0; }
+	form .colunas .retorno { display:block; -webkit-flex:1; flex:1; margin-right:5px; font:600 18px/28px Arial; color:#CC0000; }
+
+	#galeria-instagram { display:-webkit-flex; display:flex; -webkit-align-items:center; align-items:center; }
+	#galeria-instagram .item-instagram { -webkit-flex:1 0 auto; flex:1 0 auto; width:auto; height:auto; }
+	#galeria-instagram .item-instagram + .item-instagram { margin:0 0 0 20px; }
+
+	/* Internas */
+	.interna h1 { padding-bottom:40px; }
+	.interna .blocos { padding-bottom:40px; }
+	.interna .header { padding:40px 0; }
+	.interna .header + .conteudo { padding-top:40px; }
+	.blocos .bloco { display:-webkit-flex; display:flex; -webkit-align-items:center; align-items:center; }
+	.interna .blocos .bloco + .bloco { margin-top:40px; }
+	.interna .conteudo:last-child { padding-bottom:40px; }
+	.blocos .bloco figure { -webkit-flex:1; flex:1; margin:0; }
+	.blocos .bloco .texto { -webkit-flex:1; flex:1; }
+	.blocos .bloco:nth-child(2n) figure { -webkit-order:2; order:2; margin-left:40px; }
+	.blocos .bloco:nth-child(2n) .texto { -webkit-order:1; order:1; }
+	.blocos .bloco:nth-child(2n+1) figure { -webkit-order:1; order:1; margin-right:40px; }
+	.blocos .bloco:nth-child(2n+1) .texto { -webkit-order:2; order:2; }
+	#bloco-parceiros { display:-webkit-flex; display:flex; -webkit-justify-content:center; justify-content:center; -webkit-align-items:flex-start; align-items:flex-start; }
+	#mapa-parceiros { -webkit-flex:none; flex:1; -webkit-order:2; order:2; height:520px; width:auto; margin-top:0; }
+	#lista-parceiros { -webkit-flex:none; flex:none; -webkit-order:1; order:1; height:520px; min-width:340px; width:auto; overflow:auto; margin:0 40px 0 0; position:relative; text-align:left; }
+	#lista-parceiros:empty:before { content:'clique ao lado para ver as unidades robomind correspondentes.'; position:absolute; bottom:50%; left:0; }
+	#cursos-ancoras { display:block; }
+	#cursos-ancoras .lista { display:-webkit-flex; display:flex; -webkit-justify-content:space-between; justify-content:space-between; -webkit-align-items:flex-end; align-items:flex-end; }
+	#cursos-ancoras .lista .curso { -webkit-flex:1; flex:1; max-width:550px; }
+	#cursos-ancoras .lista .curso + .curso { margin:0 0 0 40px; }
+	#cursos-ancoras .lista .curso .logo { margin-bottom:10px; }
+	#cursos-lista .logo { text-align:center; max-width:550px; -webkit-order:1; order:1; -webkit-flex:1; flex:1; }
+	#cursos-lista .slogan { font-size:32px; line-height:1.2em; max-width:550px; margin-left:40px; -webkit-order:2; order:2; -webkit-flex:1; flex:1; }
+	#cursos-lista .bloco { display:-webkit-flex; display:flex; -webkit-justify-content:space-between; justify-content:space-between; -webkit-align-items:center; align-items:center; }
+	#cursos-lista .bloco:first-child { margin-top:40px; }
+	#cursos-lista .bloco figure { -webkit-flex:none; flex:none; margin:0 40px 0 0; max-width:50%; }
+	#cursos-lista .bloco + .bloco { margin-top:20px; }
+	#robotica-curricular #cursos-lista .slogan { display:-webkit-flex; display:flex; -webkit-justify-content:flex-end; justify-content:flex-end; -webkit-align-items:center; align-items:center; }
+	#robotica-curricular #cursos-lista .robo { margin-left:40px; display:block; }
+	#robotica-curricular #cursos-lista .curso .barra { top:0; }
+	#solucoes-curriculares { padding:40px 0; }
+	#solucoes-curriculares h2 { padding-bottom:35px; }
+	#solucoes-extracurriculares h2 { padding-bottom:35px; }
+	#noticias-entrada h2 { padding-bottom:35px; }
+	#noticias-entrada h2:after { width:30%; }
+	#fale-conosco .interna h2 { font:700 36px/1.2em Baron Neue,Verdana,sans-serif; margin:0 0 30px; padding-bottom:30px; }
+	#redes-sociais a { text-align:left; }
+	#redes-sociais a:before { display:inline-block; margin:0 5% 0 0; }
+	footer .nav { display:block; }
+	footer .colunas { text-align:left; -webkit-justify-content:space-between; justify-content:space-between; }
+	footer .colunas .coluna:first-child { display:block; }
+	footer .colunas .logo-rodape { margin-right:0; }
+}
+
+@media screen and (min-width:960px){
+	header .central { display:flex; display:-webkit-flex; -webkit-align-items:center; align-items:center; }
+	header .central > div { display:flex; display:-webkit-flex; justify-content:space-between; -webkit-align-items:flex-end; -webkit-flex-direction:column; align-items:flex-end; flex-direction:column; -webkit-flex:1; flex:1; }
+	#logo { margin-right:20px; -webkit-flex:none; flex:none; float:none; }
+	header + main { margin-top:136px; }
+	section h2:after { width:15%; }
+	#seja-um-parceiro h2 { padding-bottom: 40px; margin-bottom: 40px; }
+
+	#botao-menu-mobile { display:none; }
+	#nav-mobile { display:none; }
+	#link-area-professor { display:block; }
+	#nav-desktop { width:100%; display:-webkit-flex; display:flex; -webkit-justify-content:space-between; justify-content:space-between; -webkit-flex:1; flex:1; }
+	#nav-desktop a { background:no-repeat center top; padding-top:42px; }
+	#nav-desktop .link-sobre-nos { color:#ba00ff; background-image:url('../img/ico-sobre.png'); }
+	#nav-desktop .link-robotica-educacional { color:#1d1586; background-image:url('../img/ico-robotica-educacional.png'); }
+	#nav-desktop .link-robotica-curricular { color:#0469a7; background-image:url('../img/ico-robotica-curricular.png'); }
+	#nav-desktop .link-robotica-extracurricular { color:#db7700; background-image:url('../img/ico-robotica-extracurricular.png'); }
+	#nav-desktop .link-solucoes-pedagogicas { color:#ff0600; background-image:url('../img/ico-solucoes-pedagogicas.png'); }
+	#nav-desktop .link-parceiros-robomind { color:#0085c3; background-image:url('../img/ico-parceiros-robomind.png'); }
+	#nav-desktop .link-noticias { color:#029529; background-image:url('../img/ico-noticias.png'); }
+	#nav-desktop .link-pre-matricula { color:#ba00ff; background-image:url('../img/ico-matricula.png'); }
+	#nav-desktop .link-fale-conosco { color:#dba000; background-image:url('../img/ico-fale-conosco.png'); }
+	.interna h1 { font-size:36px; }
+	.interna h1:only-child { margin-bottom:0; }
+	.interna .header { margin-bottom:40px; }
+	.interna .header .central { display:-webkit-flex; display:flex; -webkit-justify-content:center; justify-content:center; }
+	.interna .header .central > * + * { margin-left:40px; }
+	#horario-atendimento { margin-top:0; padding:20px; min-width:200px; }
+
+	#roboticas .robotica { padding:60px; -webkit-flex:1; flex:1; }
+	#roboticas .robotica h2 { font-size:36px; line-height:1em; padding-bottom:35px; margin:0 auto 35px; }
+	#roboticas .robotica h2:after { height:4px; width:30%; }
+	#noticias-entrada { padding:60px 10px; }
+	#roboticas .central { display:-webkit-flex; display:flex; }
+	#roboticas .robotica:first-child:after { display:none; }
+	#roboticas .robotica:last-child:before { display:none; }
+	.formulario .colunas > span { display:-webkit-flex; display:flex; }
+	.formulario .colunas span + span { margin-top:0; }
+	#cursos-lista .curso + .curso { margin-top:0; }
+	#cursos-lista .topo { position:absolute; max-height:50%; height:100%; width:100%; left:0; top:0; background:no-repeat center top; z-index:1; }
+	#cursos-lista .rodape { position:absolute; max-height:50%; height:100%; width:100%; left:0; bottom:0; background:no-repeat center bottom; z-index:1; }
+	#cursos-lista .curso > .central { position:relative; z-index:2; }
+	#form-pre-matricula > .colunas { -webkit-justify-content:space-between; justify-content:space-between; }
+	#form-pre-matricula > .colunas > span { width:45%; -webkit-flex:none; flex:none; }
+	#form-pre-matricula .colunas span + span label { width:180px; }
+	#form-pre-matricula .input { max-width:340px; }
+	#copyright { display:flex; justify-content:space-between; align-items:center; text-align:left; }
+	#copyright img { display:block; }
+}
+
+@media screen and (min-width:961px){
+}
+
+@media screen and (min-width:1140px){
+	#lista-noticias .item-noticia { width:550px; }
+	#lista-noticias .item-noticia + .item-noticia { margin-left:40px; }
+	#lista-noticias .item-noticia:nth-child(2n+1) { margin-left:0; }
+}
+
+@media screen and (min-width:1200px){
+	html, body { font:18px/1.4em Swis721, Verdana, sans-serif; }
+	.central { padding:0; }
+	#solucoes-curriculares { padding:60px 0 0; }
+	#solucoes-extracurriculares { padding:60px 0; }
+	#solucoes-extracurriculares .curso + .curso { margin-left:40px; }
+	#noticias-entrada { padding:60px 0; }
+	#instagram { padding:60px 0; }
+	main .interna { padding:36px 0 0; }
+	.interna .conteudo:last-child { padding-bottom:60px !important; }
+	.interna .header { padding:60px 0 40px; margin-bottom:0; }
+	.interna .blocos { padding-bottom:60px; }
+	#bloco-parceiros { margin-bottom:60px; }
+	#seja-um-parceiro { padding:60px 0; }
+	#cursos-lista .curso { padding:40px 0; }
+	#redes-sociais h2 { padding-bottom:39px; margin:12px 0 56px; font-size:40px; }
+	#solucoes-pedagogicas .interna .header + .conteudo { padding:0; }
+}
+@media screen and (min-width:1361px){
+	#banners .banner { background-size:auto 100%; }
+}
